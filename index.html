@@ -1,40 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Background Color Change</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div id="scrolling-header">
+        <div class="content-container">
+            <p>aaanticaaa</p>
+        </div>
+    </div>
+    
+    
+    <nav id="navBar">
+        <button id="toggleButton">&#9776;</button>
+        <ul>
+            <li><a href="#headerSection">aaanticaaa</a></li>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>
     </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to my website!</p>
+    <div id="progress-indicators"></div>
+    <section id="headerSection" class="colored-section" data-bg-color="#f0f0f0">
+        <header>
+            <h1 class="header-title">aaanticaaa</h1>
+        </header>
     </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>This is some information about me and my website.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at example@example.com.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
-  </footer>
+    
+    <main>
+        <section id="section1" class="colored-section" data-bg-color="#d6d6f5">
+            <h1>Section 1</h1>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+        </section>
+        <section id="section2" class="colored-section" data-bg-color="#e89898">
+            <h1>Section 2</h1>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+        </section>
+        <section id="section3" class="colored-section" data-bg-color="#ccccff">
+            <h1>Section 3</h1>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+        </section>
+        <section id="section4" class="colored-section" data-bg-color="#9cc1ff">
+            <h1>Section 4</h1>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+            <br></br>
+            <p class="lorem-ipsum"></p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>

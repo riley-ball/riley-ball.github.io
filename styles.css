@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease-in-out; /* Add this line */
+}
+
+#scrolling-header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.content-container {
+    display: flex;
+    width: 200%;
+    animation: scrolling 10s linear infinite;
+}
+
+#scrolling-header p {
+    font-weight: bold;
+    font-size: 100px;
+    letter-spacing: 128px;
+    width: 50%;
+    opacity: .75;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+#navBar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(107, 100, 100, 0.8);
+    transition: left 0.3s;
+    z-index: 1001; /* Add this line */
+}
+
+#toggleButton {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1002; /* Add this line */
+}
+
+
+#navBar ul {
+    list-style-type: none;
+    margin-top: 60px;
+}
+
+#navBar ul li {
+    margin: 20px 0;
+}
+
+#navBar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.colored-section {
+    padding: 50px;
+    min-height: 150vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.blurred-text {
+    filter: blur(3px);
+}
+
+.header-title {
+    text-align: center;
+    color: #000000;
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', Times, serif;
+    padding-top: 40px;
+}
+
+header {
+    padding: 50px;
+    font-size: 48px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+  
+.colored-section {
+    padding: 50px;
+    min-height: 100vh; /* Change this to 100vh to ensure each section takes up at least the full viewport height */
+    display: flex; /* Add this to enable flexbox for each section */
+    flex-direction: column; /* Add this to stack content vertically */
+    justify-content: center; /* Add this to center content vertically */
+}
+
+.colored-section h1 {
+    margin-bottom: 2rem; /* Add this to provide some spacing between the section header and the following content */
+    text-align: center; /* Add this to center the text horizontally */
+}
+
+
+.colored-section.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+#progress-indicators {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.1);
+}
+  
+#progress-indicators .indicator {
+height: 100%;
+width: 0;
+background: rgba(0, 0, 0, 0.3);
+position: absolute;
+top: 0;
+}
+  
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+body {
+-ms-overflow-style: none; /* IE and Edge */
+scrollbar-width: none; /* Firefox */
+}
+  
